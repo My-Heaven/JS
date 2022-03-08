@@ -11,8 +11,12 @@
 </head>
 
 <body style="text-align: center;">
-    <h1>Do you love me ?</h1>
-    <input type="button" id="btnYes" value="Yes" onclick="document.write('Iuuu Quanh <3')"/>
+    <h1 id="txt">Do you love me ?</h1>
+    <input type="button" id="btnYes" value="Yes" 
+        onclick="document.getElementById('txt').innerHTML = 'Iuuu Quanh <3';
+        document.getElementById('btnYes').style.visibility = 'hidden';
+        document.getElementById('btnNo').style.visibility = 'hidden';
+        "/>
     <input type="button" id="btnNo" value="No" style="position: absolute;"/>
     
     <script>
