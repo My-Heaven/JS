@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+
+<body style="text-align: center;">
+    <h1>Do you love me ?</h1>
+    <input type="button" id="btnYes" value="Yes" onclick="alert('Iuuu Quanh <3')"/>
+    <input type="button" id="btnNo" value="No" style="position: absolute;"/>
+    
+    <script>
+
+        btnNo.onmouseover = function hoverEvent() {
+            var obj = document.getElementById('btnNo');
+            obj.style.top = Math.floor((Math.random() * 300) + 3) + "px";
+            obj.style.left = Math.floor((Math.random() * 300) + 4) + "px";
+        }
+
+
+    </script>
+</body>
+
+</html>
